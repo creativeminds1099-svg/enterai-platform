@@ -2,6 +2,7 @@
   "name": "@enterai/api",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "description": "EnterAI backend API — Cloud Run service over the enterai_* canonical BigQuery tables.",
   "main": "dist/index.js",
   "scripts": {
