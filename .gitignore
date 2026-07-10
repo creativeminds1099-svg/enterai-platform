@@ -31,3 +31,4 @@ terraform.tfvars
 *.key
 service-account*.json
 credentials.json
+package-lock.json
