@@ -1,0 +1,50 @@
+[
+  {
+    "initiative_id": "ENT-INIT-01",
+    "name": "Customer Experience AI Portfolio",
+    "description": "Agents that touch direct customer interactions.",
+    "department": "Customer Experience",
+    "lifecycle_state": "Pilot",
+    "owner_id": "owner-cx-ai-product",
+    "agent_ids": [
+      "ENT-AGT-001",
+      "ENT-AGT-006"
+    ]
+  },
+  {
+    "initiative_id": "ENT-INIT-02",
+    "name": "Commercial & Growth Intelligence",
+    "description": "Pricing, marketing, and category agents driving commercial decisions.",
+    "department": "Commercial Strategy",
+    "lifecycle_state": "Scaling-Production",
+    "owner_id": "owner-commercial-strategy-ai",
+    "agent_ids": [
+      "ENT-AGT-002",
+      "ENT-AGT-005",
+      "ENT-AGT-007"
+    ]
+  },
+  {
+    "initiative_id": "ENT-INIT-03",
+    "name": "Field & Supply Chain Automation",
+    "description": "Operational agents across field operations and logistics.",
+    "department": "Field Operations",
+    "lifecycle_state": "Experimentation",
+    "owner_id": "owner-field-ops-ai-team",
+    "agent_ids": [
+      "ENT-AGT-003",
+      "ENT-AGT-004"
+    ]
+  },
+  {
+    "initiative_id": "ENT-INIT-04",
+    "name": "Digital Product Diagnostics",
+    "description": "Agents monitoring and improving digital product experiences.",
+    "department": "Digital Products",
+    "lifecycle_state": "Scaling-Production",
+    "owner_id": "owner-digital-products-ai",
+    "agent_ids": [
+      "ENT-AGT-008"
+    ]
+  }
+]

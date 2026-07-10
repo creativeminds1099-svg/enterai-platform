@@ -1,0 +1,51 @@
+[
+  {
+    "name": "owner_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "display_name",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Team or role name, not a personal identity, in seeded sample data."
+  },
+  {
+    "name": "owner_type",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "team | role | executive_sponsor"
+  },
+  {
+    "name": "function_area",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "contact_channel",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "created_at",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "updated_at",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "source_run_ids",
+    "type": "STRING",
+    "mode": "REPEATED",
+    "description": "Collector/reconciler run ids that contributed to this record."
+  },
+  {
+    "name": "content_hash",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Hash of reconciled fields, used for change detection."
+  }
+]

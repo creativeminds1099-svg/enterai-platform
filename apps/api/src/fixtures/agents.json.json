@@ -1,0 +1,316 @@
+[
+  {
+    "agent_id": "ENT-AGT-001",
+    "initiative_id": "ENT-INIT-01",
+    "name": "Shopping Assistant Agent",
+    "description": "Shopping Assistant Agent \u2014 Customer Experience agent running on Vertex Agent Engine.",
+    "function_area": "Customer Experience",
+    "owner_id": "owner-cx-ai-product",
+    "lifecycle_state": "Experimentation",
+    "risk_flag": "High",
+    "framework": "custom",
+    "runtime_platform": "Vertex Agent Engine",
+    "model_ids": [
+      "model-gemini-pro"
+    ],
+    "prompt_ids": [
+      "prompt-ent-agt-001-v1"
+    ],
+    "mcp_server_ids": [
+      "mcp-catalog-search"
+    ],
+    "connector_ids": [],
+    "dataset_ids": [
+      "dataset-customer-experience"
+    ],
+    "production_ready": false,
+    "repo_url": null,
+    "gcp_resource_name": "projects/example-enterai-project/locations/us-central1/reasoningEngines/ent-agt-001",
+    "declared_only": false,
+    "deployed_undeclared": false,
+    "duplicate_of_agent_id": null,
+    "value_forecast_usd_millions": 23.5,
+    "run_cost_usd_millions": 2.8
+  },
+  {
+    "agent_id": "ENT-AGT-002",
+    "initiative_id": "ENT-INIT-02",
+    "name": "Commercial Pricing Agent",
+    "description": "Commercial Pricing Agent \u2014 Commercial Strategy agent running on Cloud Run + BigQuery.",
+    "function_area": "Commercial Strategy",
+    "owner_id": "owner-commercial-strategy-ai",
+    "lifecycle_state": "Scaling-Production",
+    "risk_flag": "High",
+    "framework": "custom",
+    "runtime_platform": "Cloud Run + BigQuery",
+    "model_ids": [
+      "model-gemini-pro"
+    ],
+    "prompt_ids": [
+      "prompt-ent-agt-002-v1"
+    ],
+    "mcp_server_ids": [
+      "mcp-pricing-engine"
+    ],
+    "connector_ids": [],
+    "dataset_ids": [
+      "dataset-commercial-strategy"
+    ],
+    "production_ready": false,
+    "repo_url": null,
+    "gcp_resource_name": "projects/example-enterai-project/locations/us-central1/reasoningEngines/ent-agt-002",
+    "declared_only": false,
+    "deployed_undeclared": false,
+    "duplicate_of_agent_id": null,
+    "value_forecast_usd_millions": 29.5,
+    "run_cost_usd_millions": 2.3
+  },
+  {
+    "agent_id": "ENT-AGT-003",
+    "initiative_id": "ENT-INIT-03",
+    "name": "Field Ops Insights Agent",
+    "description": "Field Ops Insights Agent \u2014 Field Operations agent running on Cloud Run + IAP.",
+    "function_area": "Field Operations",
+    "owner_id": "owner-field-ops-ai-team",
+    "lifecycle_state": "Pilot",
+    "risk_flag": "Medium",
+    "framework": "custom",
+    "runtime_platform": "Cloud Run + IAP",
+    "model_ids": [
+      "model-gemini-flash"
+    ],
+    "prompt_ids": [
+      "prompt-ent-agt-003-v1"
+    ],
+    "mcp_server_ids": [
+      "mcp-logistics-tracking"
+    ],
+    "connector_ids": [],
+    "dataset_ids": [
+      "dataset-field-operations"
+    ],
+    "production_ready": false,
+    "repo_url": null,
+    "gcp_resource_name": "projects/example-enterai-project/locations/us-central1/reasoningEngines/ent-agt-003",
+    "declared_only": false,
+    "deployed_undeclared": false,
+    "duplicate_of_agent_id": null,
+    "value_forecast_usd_millions": 16.9,
+    "run_cost_usd_millions": 1.6
+  },
+  {
+    "agent_id": "ENT-AGT-004",
+    "initiative_id": "ENT-INIT-03",
+    "name": "Supplier Agentic Support",
+    "description": "Supplier Agentic Support \u2014 Logistics & Fulfillment agent running on ADK Prototype.",
+    "function_area": "Logistics & Fulfillment",
+    "owner_id": "owner-logistics-dsa",
+    "lifecycle_state": "Ideation",
+    "risk_flag": "Medium",
+    "framework": "adk",
+    "runtime_platform": "ADK Prototype",
+    "model_ids": [
+      "model-gemini-flash"
+    ],
+    "prompt_ids": [
+      "prompt-ent-agt-004-v1"
+    ],
+    "mcp_server_ids": [
+      "mcp-logistics-tracking"
+    ],
+    "connector_ids": [],
+    "dataset_ids": [
+      "dataset-logistics-and-fulfillment"
+    ],
+    "production_ready": false,
+    "repo_url": null,
+    "gcp_resource_name": "projects/example-enterai-project/locations/us-central1/reasoningEngines/ent-agt-004",
+    "declared_only": false,
+    "deployed_undeclared": false,
+    "duplicate_of_agent_id": null,
+    "value_forecast_usd_millions": 14.9,
+    "run_cost_usd_millions": 1.0
+  },
+  {
+    "agent_id": "ENT-AGT-005",
+    "initiative_id": "ENT-INIT-02",
+    "name": "Growth Marketing Intelligence",
+    "description": "Growth Marketing Intelligence \u2014 Growth Marketing agent running on Vertex AI Workbench.",
+    "function_area": "Growth Marketing",
+    "owner_id": "owner-growth-marketing-science",
+    "lifecycle_state": "Ideation",
+    "risk_flag": "Medium",
+    "framework": "custom",
+    "runtime_platform": "Vertex AI Workbench",
+    "model_ids": [
+      "model-gemini-pro"
+    ],
+    "prompt_ids": [
+      "prompt-ent-agt-005-v1"
+    ],
+    "mcp_server_ids": [],
+    "connector_ids": [],
+    "dataset_ids": [
+      "dataset-growth-marketing"
+    ],
+    "production_ready": false,
+    "repo_url": null,
+    "gcp_resource_name": "projects/example-enterai-project/locations/us-central1/reasoningEngines/ent-agt-005",
+    "declared_only": false,
+    "deployed_undeclared": false,
+    "duplicate_of_agent_id": null,
+    "value_forecast_usd_millions": 18.8,
+    "run_cost_usd_millions": 1.4
+  },
+  {
+    "agent_id": "ENT-AGT-006",
+    "initiative_id": "ENT-INIT-01",
+    "name": "Customer Support Assist Agent",
+    "description": "Customer Support Assist Agent \u2014 Customer Support agent running on CCaaS Connector.",
+    "function_area": "Customer Support",
+    "owner_id": "owner-customer-support-ai",
+    "lifecycle_state": "Experimentation",
+    "risk_flag": "Medium",
+    "framework": "custom",
+    "runtime_platform": "CCaaS Connector",
+    "model_ids": [
+      "model-gemini-flash"
+    ],
+    "prompt_ids": [
+      "prompt-ent-agt-006-v1"
+    ],
+    "mcp_server_ids": [
+      "mcp-support-ticketing"
+    ],
+    "connector_ids": [],
+    "dataset_ids": [
+      "dataset-customer-support"
+    ],
+    "production_ready": false,
+    "repo_url": null,
+    "gcp_resource_name": "projects/example-enterai-project/locations/us-central1/reasoningEngines/ent-agt-006",
+    "declared_only": false,
+    "deployed_undeclared": false,
+    "duplicate_of_agent_id": null,
+    "value_forecast_usd_millions": 17.0,
+    "run_cost_usd_millions": 1.9
+  },
+  {
+    "agent_id": "ENT-AGT-007",
+    "initiative_id": "ENT-INIT-02",
+    "name": "Category Content Agent",
+    "description": "Category Content Agent \u2014 Category Operations agent running on Cloud Run.",
+    "function_area": "Category Operations",
+    "owner_id": "owner-category-ops-ai",
+    "lifecycle_state": "Experimentation",
+    "risk_flag": "Low",
+    "framework": "custom",
+    "runtime_platform": "Cloud Run",
+    "model_ids": [
+      "model-gemini-flash"
+    ],
+    "prompt_ids": [
+      "prompt-ent-agt-007-v1"
+    ],
+    "mcp_server_ids": [],
+    "connector_ids": [],
+    "dataset_ids": [
+      "dataset-category-operations"
+    ],
+    "production_ready": false,
+    "repo_url": null,
+    "gcp_resource_name": "projects/example-enterai-project/locations/us-central1/reasoningEngines/ent-agt-007",
+    "declared_only": false,
+    "deployed_undeclared": false,
+    "duplicate_of_agent_id": null,
+    "value_forecast_usd_millions": 14.2,
+    "run_cost_usd_millions": 1.2
+  },
+  {
+    "agent_id": "ENT-AGT-008",
+    "initiative_id": "ENT-INIT-04",
+    "name": "Digital Search Diagnostic Agent",
+    "description": "Digital Search Diagnostic Agent \u2014 Digital Products agent running on Cloud Run.",
+    "function_area": "Digital Products",
+    "owner_id": "owner-digital-products-ai",
+    "lifecycle_state": "Scaling-Production",
+    "risk_flag": "Low",
+    "framework": "custom",
+    "runtime_platform": "Cloud Run",
+    "model_ids": [
+      "model-gemini-flash"
+    ],
+    "prompt_ids": [
+      "prompt-ent-agt-008-v1"
+    ],
+    "mcp_server_ids": [
+      "mcp-catalog-search"
+    ],
+    "connector_ids": [],
+    "dataset_ids": [
+      "dataset-digital-products"
+    ],
+    "production_ready": true,
+    "repo_url": null,
+    "gcp_resource_name": "projects/example-enterai-project/locations/us-central1/reasoningEngines/ent-agt-008",
+    "declared_only": false,
+    "deployed_undeclared": false,
+    "duplicate_of_agent_id": null,
+    "value_forecast_usd_millions": 15.1,
+    "run_cost_usd_millions": 0.9
+  },
+  {
+    "agent_id": "ENT-AGT-SHADOW-01",
+    "initiative_id": null,
+    "name": "Undeclared Returns Triage Bot",
+    "description": "Discovered deployed via Cloud Asset Inventory; no matching registry entry.",
+    "function_area": "Customer Support",
+    "owner_id": null,
+    "lifecycle_state": "Ideation",
+    "risk_flag": "Medium",
+    "framework": "custom",
+    "runtime_platform": "Cloud Run",
+    "model_ids": [
+      "model-gemini-flash"
+    ],
+    "prompt_ids": [],
+    "mcp_server_ids": [],
+    "connector_ids": [],
+    "dataset_ids": [],
+    "production_ready": false,
+    "repo_url": null,
+    "gcp_resource_name": "projects/example-enterai-project/locations/us-central1/services/returns-triage-bot",
+    "declared_only": false,
+    "deployed_undeclared": true,
+    "duplicate_of_agent_id": null,
+    "value_forecast_usd_millions": null,
+    "run_cost_usd_millions": 0.4
+  },
+  {
+    "agent_id": "ENT-AGT-STALE-01",
+    "initiative_id": "ENT-INIT-01",
+    "name": "Legacy Chat Concierge Agent",
+    "description": "Registered in the control plane; no deployment activity observed in 90+ days.",
+    "function_area": "Customer Experience",
+    "owner_id": "owner-cx-ai-product",
+    "lifecycle_state": "Quarantined",
+    "risk_flag": "Low",
+    "framework": "custom",
+    "runtime_platform": "Cloud Run",
+    "model_ids": [
+      "model-gemini-flash"
+    ],
+    "prompt_ids": [],
+    "mcp_server_ids": [],
+    "connector_ids": [],
+    "dataset_ids": [],
+    "production_ready": false,
+    "repo_url": null,
+    "gcp_resource_name": null,
+    "declared_only": true,
+    "deployed_undeclared": false,
+    "duplicate_of_agent_id": null,
+    "value_forecast_usd_millions": 2.1,
+    "run_cost_usd_millions": 0.1
+  }
+]

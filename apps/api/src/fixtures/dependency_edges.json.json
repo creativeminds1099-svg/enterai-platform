@@ -1,0 +1,416 @@
+[
+  {
+    "edge_id": "EDGE-0001",
+    "from_entity_type": "initiative",
+    "from_entity_id": "ENT-INIT-01",
+    "to_entity_type": "agent",
+    "to_entity_id": "ENT-AGT-001",
+    "relationship_type": "CONTAINS",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0002",
+    "from_entity_type": "initiative",
+    "from_entity_id": "ENT-INIT-01",
+    "to_entity_type": "agent",
+    "to_entity_id": "ENT-AGT-006",
+    "relationship_type": "CONTAINS",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0003",
+    "from_entity_type": "initiative",
+    "from_entity_id": "ENT-INIT-02",
+    "to_entity_type": "agent",
+    "to_entity_id": "ENT-AGT-002",
+    "relationship_type": "CONTAINS",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0004",
+    "from_entity_type": "initiative",
+    "from_entity_id": "ENT-INIT-02",
+    "to_entity_type": "agent",
+    "to_entity_id": "ENT-AGT-005",
+    "relationship_type": "CONTAINS",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0005",
+    "from_entity_type": "initiative",
+    "from_entity_id": "ENT-INIT-02",
+    "to_entity_type": "agent",
+    "to_entity_id": "ENT-AGT-007",
+    "relationship_type": "CONTAINS",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0006",
+    "from_entity_type": "initiative",
+    "from_entity_id": "ENT-INIT-03",
+    "to_entity_type": "agent",
+    "to_entity_id": "ENT-AGT-003",
+    "relationship_type": "CONTAINS",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0007",
+    "from_entity_type": "initiative",
+    "from_entity_id": "ENT-INIT-03",
+    "to_entity_type": "agent",
+    "to_entity_id": "ENT-AGT-004",
+    "relationship_type": "CONTAINS",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0008",
+    "from_entity_type": "initiative",
+    "from_entity_id": "ENT-INIT-04",
+    "to_entity_type": "agent",
+    "to_entity_id": "ENT-AGT-008",
+    "relationship_type": "CONTAINS",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0009",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-001",
+    "to_entity_type": "mcp_server",
+    "to_entity_id": "mcp-catalog-search",
+    "relationship_type": "CALLS",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0010",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-008",
+    "to_entity_type": "mcp_server",
+    "to_entity_id": "mcp-catalog-search",
+    "relationship_type": "CALLS",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0011",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-002",
+    "to_entity_type": "mcp_server",
+    "to_entity_id": "mcp-pricing-engine",
+    "relationship_type": "CALLS",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0012",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-003",
+    "to_entity_type": "mcp_server",
+    "to_entity_id": "mcp-logistics-tracking",
+    "relationship_type": "CALLS",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0013",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-004",
+    "to_entity_type": "mcp_server",
+    "to_entity_id": "mcp-logistics-tracking",
+    "relationship_type": "CALLS",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0014",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-006",
+    "to_entity_type": "mcp_server",
+    "to_entity_id": "mcp-support-ticketing",
+    "relationship_type": "CALLS",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0015",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-001",
+    "to_entity_type": "model",
+    "to_entity_id": "model-gemini-pro",
+    "relationship_type": "USES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0016",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-001",
+    "to_entity_type": "prompt",
+    "to_entity_id": "prompt-ent-agt-001-v1",
+    "relationship_type": "USES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0017",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-001",
+    "to_entity_type": "dataset",
+    "to_entity_id": "dataset-customer-experience",
+    "relationship_type": "CONSUMES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0018",
+    "from_entity_type": "owner",
+    "from_entity_id": "owner-cx-ai-product",
+    "to_entity_type": "agent",
+    "to_entity_id": "ENT-AGT-001",
+    "relationship_type": "OWNS",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0019",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-002",
+    "to_entity_type": "model",
+    "to_entity_id": "model-gemini-pro",
+    "relationship_type": "USES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0020",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-002",
+    "to_entity_type": "prompt",
+    "to_entity_id": "prompt-ent-agt-002-v1",
+    "relationship_type": "USES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0021",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-002",
+    "to_entity_type": "dataset",
+    "to_entity_id": "dataset-commercial-strategy",
+    "relationship_type": "CONSUMES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0022",
+    "from_entity_type": "owner",
+    "from_entity_id": "owner-commercial-strategy-ai",
+    "to_entity_type": "agent",
+    "to_entity_id": "ENT-AGT-002",
+    "relationship_type": "OWNS",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0023",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-003",
+    "to_entity_type": "model",
+    "to_entity_id": "model-gemini-flash",
+    "relationship_type": "USES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0024",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-003",
+    "to_entity_type": "prompt",
+    "to_entity_id": "prompt-ent-agt-003-v1",
+    "relationship_type": "USES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0025",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-003",
+    "to_entity_type": "dataset",
+    "to_entity_id": "dataset-field-operations",
+    "relationship_type": "CONSUMES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0026",
+    "from_entity_type": "owner",
+    "from_entity_id": "owner-field-ops-ai-team",
+    "to_entity_type": "agent",
+    "to_entity_id": "ENT-AGT-003",
+    "relationship_type": "OWNS",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0027",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-004",
+    "to_entity_type": "model",
+    "to_entity_id": "model-gemini-flash",
+    "relationship_type": "USES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0028",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-004",
+    "to_entity_type": "prompt",
+    "to_entity_id": "prompt-ent-agt-004-v1",
+    "relationship_type": "USES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0029",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-004",
+    "to_entity_type": "dataset",
+    "to_entity_id": "dataset-logistics-and-fulfillment",
+    "relationship_type": "CONSUMES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0030",
+    "from_entity_type": "owner",
+    "from_entity_id": "owner-logistics-dsa",
+    "to_entity_type": "agent",
+    "to_entity_id": "ENT-AGT-004",
+    "relationship_type": "OWNS",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0031",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-005",
+    "to_entity_type": "model",
+    "to_entity_id": "model-gemini-pro",
+    "relationship_type": "USES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0032",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-005",
+    "to_entity_type": "prompt",
+    "to_entity_id": "prompt-ent-agt-005-v1",
+    "relationship_type": "USES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0033",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-005",
+    "to_entity_type": "dataset",
+    "to_entity_id": "dataset-growth-marketing",
+    "relationship_type": "CONSUMES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0034",
+    "from_entity_type": "owner",
+    "from_entity_id": "owner-growth-marketing-science",
+    "to_entity_type": "agent",
+    "to_entity_id": "ENT-AGT-005",
+    "relationship_type": "OWNS",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0035",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-006",
+    "to_entity_type": "model",
+    "to_entity_id": "model-gemini-flash",
+    "relationship_type": "USES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0036",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-006",
+    "to_entity_type": "prompt",
+    "to_entity_id": "prompt-ent-agt-006-v1",
+    "relationship_type": "USES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0037",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-006",
+    "to_entity_type": "dataset",
+    "to_entity_id": "dataset-customer-support",
+    "relationship_type": "CONSUMES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0038",
+    "from_entity_type": "owner",
+    "from_entity_id": "owner-customer-support-ai",
+    "to_entity_type": "agent",
+    "to_entity_id": "ENT-AGT-006",
+    "relationship_type": "OWNS",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0039",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-007",
+    "to_entity_type": "model",
+    "to_entity_id": "model-gemini-flash",
+    "relationship_type": "USES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0040",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-007",
+    "to_entity_type": "prompt",
+    "to_entity_id": "prompt-ent-agt-007-v1",
+    "relationship_type": "USES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0041",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-007",
+    "to_entity_type": "dataset",
+    "to_entity_id": "dataset-category-operations",
+    "relationship_type": "CONSUMES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0042",
+    "from_entity_type": "owner",
+    "from_entity_id": "owner-category-ops-ai",
+    "to_entity_type": "agent",
+    "to_entity_id": "ENT-AGT-007",
+    "relationship_type": "OWNS",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0043",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-008",
+    "to_entity_type": "model",
+    "to_entity_id": "model-gemini-flash",
+    "relationship_type": "USES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0044",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-008",
+    "to_entity_type": "prompt",
+    "to_entity_id": "prompt-ent-agt-008-v1",
+    "relationship_type": "USES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0045",
+    "from_entity_type": "agent",
+    "from_entity_id": "ENT-AGT-008",
+    "to_entity_type": "dataset",
+    "to_entity_id": "dataset-digital-products",
+    "relationship_type": "CONSUMES",
+    "discovered_by": "declared"
+  },
+  {
+    "edge_id": "EDGE-0046",
+    "from_entity_type": "owner",
+    "from_entity_id": "owner-digital-products-ai",
+    "to_entity_type": "agent",
+    "to_entity_id": "ENT-AGT-008",
+    "relationship_type": "OWNS",
+    "discovered_by": "declared"
+  }
+]

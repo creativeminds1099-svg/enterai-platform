@@ -1,0 +1,75 @@
+[
+  {
+    "name": "raw_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "collected_at",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "run_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "gcp_project_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "location",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "mcp_server_resource_name",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "projects/{project}/locations/{location}/mcpServers/{id}"
+  },
+  {
+    "name": "display_name",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "description",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "create_time",
+    "type": "TIMESTAMP",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "update_time",
+    "type": "TIMESTAMP",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "tool_spec_refs",
+    "type": "STRING",
+    "mode": "REPEATED",
+    "description": "toolspec.json references exposed by this server"
+  },
+  {
+    "name": "endpoint_refs",
+    "type": "STRING",
+    "mode": "REPEATED"
+  },
+  {
+    "name": "risk_classification",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "As reported by the source system, if present."
+  },
+  {
+    "name": "raw_payload_json",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  }
+]

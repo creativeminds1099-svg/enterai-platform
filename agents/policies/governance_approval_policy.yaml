@@ -1,0 +1,29 @@
+# Defines who (by role, never by individual name) may approve a queued
+# governance-affecting write, and what evidence is required before an
+# agent can be marked production_ready. Roles here are illustrative
+# placeholders for the reference implementation.
+
+default_approver_role: governance_reviewer
+
+field_approver_overrides:
+  - entity_type: agent
+    fields: [owner_id, initiative_id]
+    approver_role: initiative_sponsor
+  - entity_type: agent
+    fields: [lifecycle_state, production_ready, duplicate_of_agent_id]
+    approver_role: governance_reviewer
+  - entity_type: agent
+    fields: [risk_flag]
+    approver_role: security_reviewer
+
+# An agent's production_ready field (see enterai_ai_agent schema) is
+# computed, not set directly — it is only true once every check below
+# has a governance_record row with status = Approved and not expired.
+required_production_readiness_checks:
+  - security_review
+  - responsible_ai_review
+  - dlp_review
+
+# Approvals older than this are treated as Expired by the reconciler and
+# must be re-run before an agent can remain in Scaling-Production.
+approval_validity_days: 180

@@ -1,0 +1,56 @@
+[
+  {
+    "name": "dataset_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "name",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "store_type",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "vector_store | relational | data_warehouse | object_store"
+  },
+  {
+    "name": "data_classification",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "e.g. public, internal, confidential, restricted"
+  },
+  {
+    "name": "owner_id",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "consuming_agent_ids",
+    "type": "STRING",
+    "mode": "REPEATED"
+  },
+  {
+    "name": "created_at",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "updated_at",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "source_run_ids",
+    "type": "STRING",
+    "mode": "REPEATED",
+    "description": "Collector/reconciler run ids that contributed to this record."
+  },
+  {
+    "name": "content_hash",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Hash of reconciled fields, used for change detection."
+  }
+]

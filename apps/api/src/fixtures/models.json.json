@@ -1,0 +1,16 @@
+[
+  {
+    "model_id": "model-gemini-pro",
+    "name": "Gemini Pro",
+    "provider": "vertex_ai",
+    "model_family": "gemini",
+    "version": "1.5"
+  },
+  {
+    "model_id": "model-gemini-flash",
+    "name": "Gemini Flash",
+    "provider": "vertex_ai",
+    "model_family": "gemini",
+    "version": "1.5"
+  }
+]

@@ -1,0 +1,89 @@
+[
+  {
+    "name": "value_metric_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "entity_type",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "initiative | agent"
+  },
+  {
+    "name": "entity_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "metric_type",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "revenue_growth | nps_improvement | efficiency_gain | run_cost"
+  },
+  {
+    "name": "baseline_value",
+    "type": "FLOAT",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "forecast_value",
+    "type": "FLOAT",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "actual_value",
+    "type": "FLOAT",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "unit",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "e.g. usd_millions, points, percent"
+  },
+  {
+    "name": "measurement_method",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "How this was/will be measured \u2014 kept explicit rather than implied precision."
+  },
+  {
+    "name": "pivot_rule",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "scale | tune | retire \u2014 the decision rule tied to this metric's threshold."
+  },
+  {
+    "name": "period_start",
+    "type": "TIMESTAMP",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "period_end",
+    "type": "TIMESTAMP",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "created_at",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "updated_at",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "source_run_ids",
+    "type": "STRING",
+    "mode": "REPEATED",
+    "description": "Collector/reconciler run ids that contributed to this record."
+  },
+  {
+    "name": "content_hash",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Hash of reconciled fields, used for change detection."
+  }
+]

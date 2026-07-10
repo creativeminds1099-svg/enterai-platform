@@ -1,0 +1,69 @@
+[
+  {
+    "name": "raw_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "collected_at",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "run_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "gcp_project_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "asset_name",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Full resource name from Cloud Asset Inventory."
+  },
+  {
+    "name": "asset_type",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "e.g. run.googleapis.com/Service, aiplatform.googleapis.com/ReasoningEngine"
+  },
+  {
+    "name": "display_name",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "location",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "state",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "labels_json",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "create_time",
+    "type": "TIMESTAMP",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "update_time",
+    "type": "TIMESTAMP",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "raw_payload_json",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {"name": "raw_id", "type": "STRING", "mode": "REQUIRED", "description": "Surrogate row id (uuid) for this raw landing row."},
+  {"name": "collected_at", "type": "TIMESTAMP", "mode": "REQUIRED", "description": "Time the collector fetched this record."},
+  {"name": "run_id", "type": "STRING", "mode": "REQUIRED", "description": "Collector run id from the shared harness."},
+  {"name": "gcp_project_id", "type": "STRING", "mode": "REQUIRED"},
+  {"name": "location", "type": "STRING", "mode": "NULLABLE", "description": "Agent Registry location, e.g. us-central1."},
+  {"name": "agent_resource_name", "type": "STRING", "mode": "REQUIRED", "description": "projects/{project}/locations/{location}/agents/{agent_id}"},
+  {"name": "display_name", "type": "STRING", "mode": "NULLABLE"},
+  {"name": "description", "type": "STRING", "mode": "NULLABLE"},
+  {"name": "create_time", "type": "TIMESTAMP", "mode": "NULLABLE"},
+  {"name": "update_time", "type": "TIMESTAMP", "mode": "NULLABLE"},
+  {"name": "framework", "type": "STRING", "mode": "NULLABLE", "description": "e.g. adk, langgraph, custom."},
+  {"name": "runtime_platform", "type": "STRING", "mode": "NULLABLE", "description": "e.g. agent_engine, cloud_run, gke."},
+  {"name": "model_refs", "type": "STRING", "mode": "REPEATED", "description": "Model resource names referenced by this agent."},
+  {"name": "mcp_server_refs", "type": "STRING", "mode": "REPEATED", "description": "MCP server resource names this agent connects to."},
+  {"name": "endpoint_refs", "type": "STRING", "mode": "REPEATED"},
+  {"name": "labels_json", "type": "STRING", "mode": "NULLABLE", "description": "Raw labels map, JSON-encoded."},
+  {"name": "raw_payload_json", "type": "STRING", "mode": "REQUIRED", "description": "Full untouched API response, JSON-encoded, for replay/debugging."}
+]

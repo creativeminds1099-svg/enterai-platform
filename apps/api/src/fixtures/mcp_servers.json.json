@@ -1,0 +1,64 @@
+[
+  {
+    "mcp_server_id": "mcp-catalog-search",
+    "name": "Catalog Search MCP",
+    "description": "Exposes product catalog search and filtering tools.",
+    "owner_id": "owner-digital-products-ai",
+    "lifecycle_state": "Scaling-Production",
+    "tool_spec_refs": [
+      "catalog.search",
+      "catalog.getProduct"
+    ],
+    "risk_flag": "Low",
+    "consuming_agent_ids": [
+      "ENT-AGT-001",
+      "ENT-AGT-008"
+    ]
+  },
+  {
+    "mcp_server_id": "mcp-pricing-engine",
+    "name": "Pricing Engine MCP",
+    "description": "Exposes pricing calculation and promotion tools.",
+    "owner_id": "owner-commercial-strategy-ai",
+    "lifecycle_state": "Scaling-Production",
+    "tool_spec_refs": [
+      "pricing.quote",
+      "pricing.applyPromotion"
+    ],
+    "risk_flag": "High",
+    "consuming_agent_ids": [
+      "ENT-AGT-002"
+    ]
+  },
+  {
+    "mcp_server_id": "mcp-logistics-tracking",
+    "name": "Logistics Tracking MCP",
+    "description": "Exposes shipment and supplier status tools.",
+    "owner_id": "owner-logistics-dsa",
+    "lifecycle_state": "Pilot",
+    "tool_spec_refs": [
+      "logistics.trackShipment",
+      "logistics.supplierStatus"
+    ],
+    "risk_flag": "Medium",
+    "consuming_agent_ids": [
+      "ENT-AGT-003",
+      "ENT-AGT-004"
+    ]
+  },
+  {
+    "mcp_server_id": "mcp-support-ticketing",
+    "name": "Support Ticketing MCP",
+    "description": "Exposes ticket creation and lookup tools for support workflows.",
+    "owner_id": "owner-customer-support-ai",
+    "lifecycle_state": "Experimentation",
+    "tool_spec_refs": [
+      "support.createTicket",
+      "support.lookupCase"
+    ],
+    "risk_flag": "Medium",
+    "consuming_agent_ids": [
+      "ENT-AGT-006"
+    ]
+  }
+]

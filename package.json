@@ -1,0 +1,15 @@
+{
+  "name": "enterai-platform",
+  "private": true,
+  "version": "0.1.0",
+  "description": "EnterAI — Enterprise AI Control Plane (monorepo root).",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev -w @enterai/api",
+    "dev:web": "npm run dev -w @enterai/web",
+    "build": "npm run build -w @enterai/shared-types && npm run build -w @enterai/api && npm run build -w @enterai/web"
+  }
+}

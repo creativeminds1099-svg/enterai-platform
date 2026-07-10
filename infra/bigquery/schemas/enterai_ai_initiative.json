@@ -1,0 +1,63 @@
+[
+  {
+    "name": "initiative_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "name",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "description",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "department",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Generic department/function name, not an org chart reference."
+  },
+  {
+    "name": "lifecycle_state",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Ideation | Experimentation | Pilot | Scaling-Production | Retired | Quarantined"
+  },
+  {
+    "name": "owner_id",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "FK -> enterai_ai_owner_sponsor.owner_id"
+  },
+  {
+    "name": "agent_ids",
+    "type": "STRING",
+    "mode": "REPEATED",
+    "description": "FK -> enterai_ai_agent.agent_id"
+  },
+  {
+    "name": "created_at",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "updated_at",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "source_run_ids",
+    "type": "STRING",
+    "mode": "REPEATED",
+    "description": "Collector/reconciler run ids that contributed to this record."
+  },
+  {
+    "name": "content_hash",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Hash of reconciled fields, used for change detection."
+  }
+]

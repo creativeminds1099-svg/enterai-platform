@@ -1,0 +1,20 @@
+[
+  {
+    "agent_id": "ENT-AGT-SHADOW-01",
+    "finding_type": "deployed_undeclared",
+    "detail": "Cloud Run service 'returns-triage-bot' observed with no matching Agent Registry entry.",
+    "confidence": 0.95
+  },
+  {
+    "agent_id": "ENT-AGT-STALE-01",
+    "finding_type": "declared_only",
+    "detail": "Registered agent has produced zero invocations in the last 90 days.",
+    "confidence": 0.88
+  },
+  {
+    "agent_id": "ENT-AGT-006",
+    "finding_type": "duplicate_candidate",
+    "detail": "62% token-overlap similarity with ENT-AGT-001 (Shopping Assistant Agent) on function area and MCP dependencies.",
+    "confidence": 0.62
+  }
+]

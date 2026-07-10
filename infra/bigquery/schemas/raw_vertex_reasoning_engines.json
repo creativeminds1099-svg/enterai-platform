@@ -1,0 +1,73 @@
+[
+  {
+    "name": "raw_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "collected_at",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "run_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "gcp_project_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "location",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "reasoning_engine_resource_name",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "projects/{project}/locations/{location}/reasoningEngines/{id}"
+  },
+  {
+    "name": "display_name",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "description",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "create_time",
+    "type": "TIMESTAMP",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "update_time",
+    "type": "TIMESTAMP",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "class_methods_json",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "deployed_model_refs",
+    "type": "STRING",
+    "mode": "REPEATED"
+  },
+  {
+    "name": "service_account",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "raw_payload_json",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  }
+]

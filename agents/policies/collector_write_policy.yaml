@@ -1,0 +1,88 @@
+# Declares, per canonical entity type, which fields a collector or the
+# reconciler may write autonomously vs. which are gated behind a human
+# approval (agents/harness/approval_gate.py). Any field NOT listed in
+# either list defaults to gated — the safe failure mode is "ask", not
+# "write silently".
+#
+# Rule of thumb used throughout: observed facts about the world (runtime,
+# endpoints, telemetry-derived flags) are autonomous. Anything implying a
+# decision a human is accountable for (who owns it, what stage it's in,
+# whether it's production-ready) is gated.
+
+entities:
+  agent:
+    autonomous_fields:
+      - framework
+      - runtime_platform
+      - model_ids
+      - prompt_ids
+      - mcp_server_ids
+      - connector_ids
+      - dataset_ids
+      - gcp_resource_name
+      - declared_only
+      - deployed_undeclared
+      - repo_url
+    gated_fields:
+      - owner_id
+      - lifecycle_state
+      - risk_flag
+      - production_ready
+      - duplicate_of_agent_id
+      - name
+      - initiative_id
+
+  mcp_server:
+    autonomous_fields:
+      - tool_spec_refs
+      - endpoint_ids
+      - consuming_agent_ids
+    gated_fields:
+      - owner_id
+      - lifecycle_state
+      - risk_flag
+
+  connector_tool_api:
+    autonomous_fields:
+      - consuming_agent_ids
+    gated_fields:
+      - owner_id
+      - risk_flag
+
+  dataset_vector_store:
+    autonomous_fields:
+      - consuming_agent_ids
+    gated_fields:
+      - owner_id
+      - data_classification
+
+  dependency_edge:
+    autonomous_fields:
+      - from_entity_type
+      - from_entity_id
+      - to_entity_type
+      - to_entity_id
+      - relationship_type
+      - discovered_by
+    gated_fields: []
+
+  runtime_metric:
+    autonomous_fields:
+      - invocation_count
+      - p50_latency_ms
+      - p95_latency_ms
+      - error_rate
+      - total_input_tokens
+      - total_output_tokens
+      - estimated_cost_usd
+      - unique_callers
+    gated_fields: []
+
+  initiative:
+    autonomous_fields:
+      - agent_ids
+    gated_fields:
+      - owner_id
+      - lifecycle_state
+      - department
+      - name

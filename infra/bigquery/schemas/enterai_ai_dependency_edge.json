@@ -1,0 +1,62 @@
+[
+  {
+    "name": "edge_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "from_entity_type",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "initiative | agent | mcp_server | connector | model | prompt | dataset | owner"
+  },
+  {
+    "name": "from_entity_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "to_entity_type",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "to_entity_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "relationship_type",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "CONTAINS | USES | CALLS | CONSUMES | PRODUCES | DEPENDS_ON | OWNS | APPROVED_BY | EXPOSES | MONITORED_BY"
+  },
+  {
+    "name": "discovered_by",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "declared | collector:<source> | reconciler"
+  },
+  {
+    "name": "created_at",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "updated_at",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "source_run_ids",
+    "type": "STRING",
+    "mode": "REPEATED",
+    "description": "Collector/reconciler run ids that contributed to this record."
+  },
+  {
+    "name": "content_hash",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Hash of reconciled fields, used for change detection."
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "owner_id": "owner-cx-ai-product",
+    "display_name": "Cx Ai Product",
+    "owner_type": "team",
+    "function_area": "Customer Experience",
+    "contact_channel": "#owner-cx-ai-product"
+  },
+  {
+    "owner_id": "owner-commercial-strategy-ai",
+    "display_name": "Commercial Strategy Ai",
+    "owner_type": "team",
+    "function_area": "Commercial Strategy",
+    "contact_channel": "#owner-commercial-strategy-ai"
+  },
+  {
+    "owner_id": "owner-field-ops-ai-team",
+    "display_name": "Field Ops Ai Team",
+    "owner_type": "team",
+    "function_area": "Field Operations",
+    "contact_channel": "#owner-field-ops-ai-team"
+  },
+  {
+    "owner_id": "owner-logistics-dsa",
+    "display_name": "Logistics Dsa",
+    "owner_type": "team",
+    "function_area": "Logistics & Fulfillment",
+    "contact_channel": "#owner-logistics-dsa"
+  },
+  {
+    "owner_id": "owner-growth-marketing-science",
+    "display_name": "Growth Marketing Science",
+    "owner_type": "team",
+    "function_area": "Growth Marketing",
+    "contact_channel": "#owner-growth-marketing-science"
+  },
+  {
+    "owner_id": "owner-customer-support-ai",
+    "display_name": "Customer Support Ai",
+    "owner_type": "team",
+    "function_area": "Customer Support",
+    "contact_channel": "#owner-customer-support-ai"
+  },
+  {
+    "owner_id": "owner-category-ops-ai",
+    "display_name": "Category Ops Ai",
+    "owner_type": "team",
+    "function_area": "Category Operations",
+    "contact_channel": "#owner-category-ops-ai"
+  },
+  {
+    "owner_id": "owner-digital-products-ai",
+    "display_name": "Digital Products Ai",
+    "owner_type": "team",
+    "function_area": "Digital Products",
+    "contact_channel": "#owner-digital-products-ai"
+  }
+]

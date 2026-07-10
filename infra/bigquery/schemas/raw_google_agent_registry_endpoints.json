@@ -1,0 +1,64 @@
+[
+  {
+    "name": "raw_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "collected_at",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "run_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "gcp_project_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "location",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "endpoint_resource_name",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "display_name",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "target_type",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "agent | mcp_server | model"
+  },
+  {
+    "name": "target_resource_name",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "network_access",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "public | internal | private_service_connect"
+  },
+  {
+    "name": "create_time",
+    "type": "TIMESTAMP",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "raw_payload_json",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  }
+]
