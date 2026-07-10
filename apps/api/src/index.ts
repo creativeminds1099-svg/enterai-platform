@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import helmet from "helmet";
-import pinoHttp from "pino-http";
+import { pinoHttp } from "pino-http";
 import { config } from "./config.js";
 import { initiativesRouter } from "./routes/initiatives.js";
 import { agentsRouter } from "./routes/agents.js";
